@@ -45,6 +45,7 @@ class StopWatch(Frame):
             time.sleep(1)
         seconds = int(elap-minutes*60.0)
         hour = int(minutes/60)
+        minutes = minutes%60
         self.timestr.set('%02d:%02d:%02d'%(hour,minutes,seconds))
     def Start(self):
         result = tk.StringVar()
